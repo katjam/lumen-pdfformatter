@@ -1,0 +1,27 @@
+/*---------------
+ BODY
+---------------*/
+body {
+  background: #696773;
+  font-family: Hack, monospace;
+  color: #eff1f3;
+  text-align: left;
+}
+
+/*---------------
+ HEADERS
+ --------------*/
+h1, h2, h3 {
+  color: #009fb7;
+}
+
+/*---------------
+ LINKS
+ --------------*/
+a {
+  color: #fed766
+}
+a:hover, a:visited {
+  color: #fed766;
+}
+
