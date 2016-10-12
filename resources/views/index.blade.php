@@ -28,13 +28,14 @@
           <h3>Upload a pdf</h3>
         </div>
         <div class="panel-body">
-          <div v-if="!pdf-file">
-            <input type="file" @change="onFileChange">
-          </div>
-          <div v-else>
-            Preview
-            <button @click="removePdf">Remove PDF</button>
-          </div>
+          <form>
+            <div class="form-group">
+              <input type="file" @change="onFileChange">
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary btn-lg" v-on:click="onCreate">Submit</button>
+            </div>
+          </form>
         </div>
 
       </div>
@@ -49,6 +50,7 @@
   </div>
 
   <!-- JS -->
+  <script src="js/jquery.js"></script>
   <script src="js/vue.js"></script>
   <script src="js/vue-resource.js"></script>
   <script src="js/app.js"></script>

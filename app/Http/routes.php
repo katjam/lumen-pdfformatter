@@ -14,3 +14,5 @@
 $app->get('/', function() use ($app) {
     return view('index');
 });
+
+$app->post('api/save', 'FileController@store');
