@@ -28,7 +28,13 @@
           <h3>Upload a pdf</h3>
         </div>
         <div class="panel-body">
-
+          <div v-if="!pdf-file">
+            <input type="file" @change="onFileChange">
+          </div>
+          <div v-else>
+            Preview
+            <button @click="removePdf">Remove PDF</button>
+          </div>
         </div>
 
       </div>
