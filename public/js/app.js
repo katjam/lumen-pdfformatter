@@ -28,6 +28,7 @@ new Vue({
 
             reader.onload = (e) => {
                 vm.pdffile = e.target.result;
+                $('#viewer').attr('src', vm.pdffile);
             };
             reader.readAsDataURL(file);
         },

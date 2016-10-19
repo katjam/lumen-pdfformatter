@@ -30,7 +30,7 @@
         <div class="panel-body">
           <form>
             <div class="form-group">
-              <input type="file" @change="onFileChange">
+              <input id="uploadPDF" type="file" @change="onFileChange">
             </div>
             <div class="form-group">
               <button class="btn btn-primary btn-lg" v-on:click="onCreate">Submit</button>
@@ -45,6 +45,9 @@
     <div class="col-sm-6">
       <div class="list-group">
 
+        <div style="clear:both">
+           <iframe id="viewer" frameborder="0" scrolling="no" width="400" height="600"></iframe>
+        </div>
       </div>
     </div>
   </div>
